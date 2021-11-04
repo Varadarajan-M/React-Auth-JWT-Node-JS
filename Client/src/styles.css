@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+	display: none;
+}
+.login-card-body,
+.signup-card-body {
+	overflow-y: scroll;
+}
+.single-secret-card-body {
+	max-width: 90%;
+	word-break: break-all;
+}
+@media screen and (min-width: 460px) {
+	.login-card,
+	.secrets-card,
+	.signup-card {
+		padding: 50px 25px;
+		height: 70%;
+		width: 90%;
+	}
+
+	.card-header:first-child {
+		border: none;
+	}
+	.secrets-card-body .secrets-wrapper {
+		min-height: 120px;
+	}
+
+	.secrets-card .card-header {
+		margin-left: 15px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.login-card,
+	.signup-card {
+		padding: 0;
+		width: 85%;
+		height: min(70%, 350px);
+	}
+	.login-card-header:first-child {
+		border-bottom: 1px solid #05050517;
+	}
+}
