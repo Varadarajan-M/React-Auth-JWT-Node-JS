@@ -8,7 +8,7 @@ const connectionOptions = {
 };
 
 const connectDb = () => {
-	connect('mongodb://localhost:27017/jwtDb', connectionOptions);
+	connect(process.env.MONGO_URI as string, connectionOptions);
 	connection.on('connected', () => {
 		console.log('connected to database');
 	});
