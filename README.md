@@ -9,5 +9,6 @@
 
 1. Clone the repository
 2. Run `npm install` in `API and Client` folders.
-3. Run `npm run dev` to start the server.
-4. Run `npm start` to start the app.
+3. Create a `.env` file in `API` directory with your `MONGO_URI` `SECRET_KEY` and `PORT = 5000`
+4. Run `npm run dev` to start the server.
+5. Run `npm start` to start the app.
